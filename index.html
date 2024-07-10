@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zullal Bhilajirao Patil College - Welcome</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="#">Zullal Bhilajirao Patil College </a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#programs">Programs</a></li>
+                    <li><a href="#admissions">Admissions</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h2>Welcome to Zullal Bhilajirao Patil College</h2>
+            <p>Your education is a dress rehearsal for a life that is yours to lead...!</p>
+            <a href="#admissions" class="btn btn-primary">Apply Now</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Our college is a prestigious institution offering a diverse range of programs to help you achieve your academic and career goals. Our faculty is committed to providing a top-notch education and our campus is equipped with state-of-the-art facilities.</p>
+        </div>
+    </section>
+
+    <section id="programs">
+        <div class="container">
+            <h2>Programs</h2>
+            <div class="program-list">
+                <div class="program">
+                    <h3>Computer Science</h3>
+                    <p>Develop cutting-edge skills in technology and innovation.</p>
+                </div>
+                <div class="program">
+                    <h3>Engineering</h3>
+                    <p>Become a problem-solver with our hands-on engineering courses.</p>
+                </div>
+                <div class="program">
+                    <h3>Business Administration</h3>
+                    <p>Prepare for a dynamic career in business with our comprehensive program.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="admissions">
+        <div class="container">
+            <h2>Admissions</h2>
+            <p>Join our community of learners and leaders. Our admissions process is designed to be straightforward and supportive. Apply now to start your journey with us.</p>
+            <a href="#" class="btn btn-primary">Apply Now</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have questions? Get in touch with us.</p>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Zullal Bhilajirao Patil College. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Sticky Navigation
+        window.onscroll = function() {myFunction()};
+
+        var header = document.querySelector("header");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+</html>
+
